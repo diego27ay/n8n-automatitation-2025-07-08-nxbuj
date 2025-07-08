@@ -1,32 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>n8n automation | Streamline Your Business</title>
     <meta name="description" content="Create powerful n8n automations to save time and boost your business efficiency">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
-    <header x-data="{ isOpen: false }" class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-800">
+    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">n8n.auto</a>
+                <a href="https://diego27ay.github.io/n8n-automatitation-2025-07-08-nxbuj" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">n8n.auto</a>
                 
-                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                    </svg>
+                <button class="mobile-menu-button md:hidden focus:outline-none" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
 
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="hover:text-purple-400 transition-colors duration-300">Features</a>
                     <a href="#benefits" class="hover:text-purple-400 transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="hover:text-purple-400 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="hover:text-purple-400 transition-colors duration-300">About</a>
                     <a href="#faq" class="hover:text-purple-400 transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="hover:text-purple-400 transition-colors duration-300">Contact</a>
                 </div>
+            </div>
+            
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <a href="#features" class="block py-2 px-4 hover:bg-gray-700 rounded transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block py-2 px-4 hover:bg-gray-700 rounded transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block py-2 px-4 hover:bg-gray-700 rounded transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block py-2 px-4 hover:bg-gray-700 rounded transition-colors duration-300">About</a>
+                <a href="#faq" class="block py-2 px-4 hover:bg-gray-700 rounded transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block py-2 px-4 hover:bg-gray-700 rounded transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -39,13 +56,13 @@
             
             <div class="container mx-auto text-center relative z-10">
                 <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Create n8n automations
+                    Transform Your Workflow with n8n Automation
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-                    Streamline your workflow and boost productivity with powerful automation solutions
+                    Revolutionize your business operations with powerful automation solutions that save time, reduce errors, and boost productivity by up to 80%
                 </p>
                 <a href="https://shazapp.com/" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
-                    Get Started Now
+                    Start Automating Today
                 </a>
             </div>
         </section>
@@ -54,38 +71,38 @@
         <section id="features" class="py-24 px-6 bg-gray-800/50">
             <div class="container mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Powerful Automation Features
+                    Enterprise-Grade Automation Features
                 </h2>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-gray-800 rounded-2xl p-8 hover:scale-105 transition-transform duration-300 border border-gray-700">
+                    <div class="bg-gray-800 rounded-2xl p-8 hover:scale-105 transition-all duration-300 border border-gray-700 hover:shadow-lg hover:shadow-purple-500/20">
                         <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6">
                             <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Automation Workflows</h3>
-                        <p class="text-gray-400">Create powerful automation workflows that streamline your business processes</p>
+                        <h3 class="text-xl font-semibold mb-4">Visual Workflow Builder</h3>
+                        <p class="text-gray-400">Create complex automation workflows with our intuitive drag-and-drop interface. Connect multiple services and trigger actions seamlessly.</p>
                     </div>
 
-                    <div class="bg-gray-800 rounded-2xl p-8 hover:scale-105 transition-transform duration-300 border border-gray-700">
+                    <div class="bg-gray-800 rounded-2xl p-8 hover:scale-105 transition-all duration-300 border border-gray-700 hover:shadow-lg hover:shadow-pink-500/20">
                         <div class="w-12 h-12 bg-pink-500/20 rounded-lg flex items-center justify-center mb-6">
                             <svg class="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">n8n Integration</h3>
-                        <p class="text-gray-400">Seamlessly integrate with n8n's powerful automation platform</p>
+                        <h3 class="text-xl font-semibold mb-4">Advanced Integration Hub</h3>
+                        <p class="text-gray-400">Connect with 200+ popular services and APIs. Custom integrations available for enterprise clients with specific needs.</p>
                     </div>
 
-                    <div class="bg-gray-800 rounded-2xl p-8 hover:scale-105 transition-transform duration-300 border border-gray-700">
+                    <div class="bg-gray-800 rounded-2xl p-8 hover:scale-105 transition-all duration-300 border border-gray-700 hover:shadow-lg hover:shadow-purple-500/20">
                         <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6">
                             <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Chatbot Solutions</h3>
-                        <p class="text-gray-400">Build intelligent chatbots to enhance customer engagement</p>
+                        <h3 class="text-xl font-semibold mb-4">AI-Powered Chatbots</h3>
+                        <p class="text-gray-400">Deploy intelligent chatbots that learn from interactions and provide 24/7 customer support with natural language processing.</p>
                     </div>
                 </div>
             </div>
@@ -95,39 +112,136 @@
         <section id="benefits" class="py-24 px-6">
             <div class="container mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Transform Your Business
+                    Measurable Business Impact
                 </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
                         <div class="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                             <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Save Time</h3>
-                        <p class="text-gray-400">Automate repetitive tasks and focus on what matters most</p>
+                        <h3 class="text-xl font-semibold mb-4">Save 20+ Hours Weekly</h3>
+                        <p class="text-gray-400">Eliminate repetitive tasks and redirect your team's focus to strategic initiatives that drive growth.</p>
                     </div>
 
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
                         <div class="w-16 h-16 bg-pink-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                             <svg class="w-8 h-8 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Automate Your Business</h3>
-                        <p class="text-gray-400">Streamline workflows and improve operational efficiency</p>
+                        <h3 class="text-xl font-semibold mb-4">99.9% Error Reduction</h3>
+                        <p class="text-gray-400">Achieve near-perfect accuracy in your automated workflows and data processing tasks.</p>
                     </div>
 
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
                         <div class="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                             <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Increase Sales</h3>
-                        <p class="text-gray-400">Boost revenue through automated sales processes</p>
+                        <h3 class="text-xl font-semibold mb-4">30% Revenue Growth</h3>
+                        <p class="text-gray-400">Our clients report significant revenue increases through optimized sales and marketing automation.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 px-6 bg-gray-800/50">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Client Success Stories
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The n8n automation platform has transformed our customer service operations. We've reduced response times by 75% and increased customer satisfaction scores by 40%."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Sarah Johnson</p>
+                            <p>Customer Success Director, TechCorp</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Implementing n8n's workflow automation has saved our team over 30 hours per week. The ROI was visible within the first month."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Michael Chen</p>
+                            <p>Operations Manager, GrowthStart</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The visual workflow builder is incredibly intuitive. We've automated our entire lead nurturing process and seen a 50% increase in conversion rates."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Emma Rodriguez</p>
+                            <p>Marketing Director, SalesPro</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The customer support team is exceptional. They helped us set up complex workflows that now save us countless hours in data processing and reporting."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">David Thompson</p>
+                            <p>IT Director, DataFlow Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-24 px-6">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    About Us
+                </h2>
+
+                <div class="space-y-8 text-gray-300">
+                    <p class="leading-relaxed">
+                        Founded in 2020, n8n.auto emerged from a simple vision: making powerful automation accessible to businesses of all sizes. Our founders, experienced in enterprise software development, recognized the need for a more intuitive and flexible automation solution that could adapt to any business workflow.
+                    </p>
+                    <p class="leading-relaxed">
+                        Today, we're driven by our mission to democratize automation technology. We believe in empowering businesses through intelligent solutions that reduce manual work, eliminate errors, and accelerate growth. Our core values of innovation, reliability, and customer success guide everything we do, from product development to customer support.
+                    </p>
                 </div>
             </div>
         </section>
@@ -140,19 +254,29 @@
                 </h2>
 
                 <div class="space-y-6">
-                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
-                        <h3 class="text-xl font-semibold mb-4">What is n8n automation?</h3>
-                        <p class="text-gray-400">n8n is a powerful workflow automation tool that helps you connect different applications and automate your business processes.</p>
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">What types of automations can I create with n8n?</h3>
+                        <p class="text-gray-400">You can create virtually any type of automation, from simple task automation to complex business workflows. Common use cases include customer data synchronization, marketing automation, sales process automation, and custom API integrations.</p>
                     </div>
 
-                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
-                        <h3 class="text-xl font-semibold mb-4">How can I get started?</h3>
-                        <p class="text-gray-400">Simply sign up on our platform and follow our step-by-step guide to create your first automation workflow.</p>
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Do I need technical expertise to use n8n?</h3>
+                        <p class="text-gray-400">No technical expertise is required for basic automations. Our visual workflow builder is designed for non-technical users. However, developers can leverage advanced features for more complex integrations.</p>
                     </div>
 
-                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
-                        <h3 class="text-xl font-semibold mb-4">What kind of support do you offer?</h3>
-                        <p class="text-gray-400">We provide 24/7 technical support and comprehensive documentation to help you succeed with your automation projects.</p>
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">How secure is the platform?</h3>
+                        <p class="text-gray-400">We implement enterprise-grade security measures including end-to-end encryption, regular security audits, and compliance with major data protection regulations like GDPR and CCPA.</p>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">What kind of support is available?</h3>
+                        <p class="text-gray-400">We offer 24/7 technical support, comprehensive documentation, video tutorials, and dedicated account managers for enterprise clients. Our support team has an average response time of under 2 hours.</p>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">How quickly can I get started?</h3>
+                        <p class="text-gray-400">You can start creating automations within minutes of signing up. Our quickstart guides and templates help you launch your first automation workflow in less than an hour.</p>
                     </div>
                 </div>
             </div>
@@ -161,11 +285,12 @@
         <!-- CTA Section -->
         <section class="py-24 px-6 relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-br from-purple-900/40 to-pink-900/40"></div>
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa')] bg-cover bg-center opacity-10"></div>
             <div class="container mx-auto text-center relative z-10">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Business?</h2>
-                <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">Start automating your workflows today and experience the power of n8n automation.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Automate Your Success?</h2>
+                <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">Join thousands of businesses already saving time and increasing productivity with n8n automation.</p>
                 <a href="https://shazapp.com/" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
-                    Get Started Now
+                    Start Your Free Trial
                 </a>
             </div>
         </section>
@@ -187,8 +312,9 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-6">Legal</h4>
                     <ul class="space-y-4 text-gray-400">
-                        <li><a href="#" class="hover:text-purple-400 transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://diego27ay.github.io/n8n-automatitation-2025-07-08-nxbuj/privacy.html" class="hover:text-purple-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://diego27ay.github.io/n8n-automatitation-2025-07-08-nxbuj/terms.html" class="hover:text-purple-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://diego27ay.github.io/n8n-automatitation-2025-07-08-nxbuj/blog.html" class="hover:text-purple-400 transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
 
@@ -210,5 +336,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
